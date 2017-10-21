@@ -1,0 +1,21 @@
+group 'com.ilyaf'
+version '1.0.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://dl.bintray.com/devexperts/Maven/"
+    }
+}
+
+dependencies {
+    compile group: 'net.jcip', name: 'jcip-annotations', version: '1.0'
+
+    testCompile group: 'com.devexperts.lincheck', name: 'core', version: '1.9'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
