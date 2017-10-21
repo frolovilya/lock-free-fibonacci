@@ -56,7 +56,7 @@ public class LockFreeFibonacci {
             if(currentState == state.get()) {
                 BigInteger nextNumber = prev.add(current);
 
-                // using atomic compareAndSet method
+                // change state using atomic compareAndSet method
                 if (state.compareAndSet(currentState, new State(nextNumber, current)))
                     return nextNumber;
             }

@@ -1,4 +1,4 @@
-group 'com.ilyaf'
+group 'com.frolovilya'
 version '1.0.0'
 
 apply plugin: 'java'
