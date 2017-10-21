@@ -1,4 +1,4 @@
-package com.ilyaf;
+package com.frolovilya;
 
 import com.devexperts.dxlab.lincheck.LinChecker;
 import com.devexperts.dxlab.lincheck.annotations.Operation;
@@ -13,6 +13,7 @@ import java.math.BigInteger;
  *
  * @see <a href="https://en.wikipedia.org/wiki/Linearizability">Linearizability</a>
  */
+// This test uses 3 parallel threads and executes 1-3 operations in each
 @StressCTest(iterations = 300, actorsPerThread = {"1:3", "1:3", "1:3"})
 public class LockFreeFibonacciTest {
 

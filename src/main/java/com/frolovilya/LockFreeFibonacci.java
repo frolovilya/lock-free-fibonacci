@@ -1,4 +1,4 @@
-package com.ilyaf;
+package com.frolovilya;
 
 import net.jcip.annotations.Immutable;
 import net.jcip.annotations.ThreadSafe;
