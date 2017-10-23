@@ -19,8 +19,8 @@ public class LockFreeFibonacci {
      */
     @Immutable
     private class State {
-        private BigInteger current;
-        private BigInteger prev;
+        private final BigInteger current;
+        private final BigInteger prev;
 
         State(BigInteger current, BigInteger prev) {
             this.current = current;
@@ -36,7 +36,7 @@ public class LockFreeFibonacci {
         }
     }
 
-    private AtomicReference<State> state = new AtomicReference<>(
+    private final AtomicReference<State> state = new AtomicReference<>(
             new State(BigInteger.valueOf(1), BigInteger.valueOf(-1))
     );
 
