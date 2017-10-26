@@ -1,0 +1,7 @@
+jmh {
+    warmupIterations = 4
+    iterations = 10
+    fork = 1
+    threads = 32
+    synchronizeIterations = true
+}

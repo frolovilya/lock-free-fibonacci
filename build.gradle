@@ -1,8 +1,15 @@
+plugins {
+    id "me.champeau.gradle.jmh" version "0.4.5-beta-2"
+    id 'com.github.johnrengelman.shadow' version '2.0.1'
+}
+
 group 'com.frolovilya'
 version '1.0.0'
 
 apply plugin: 'java'
 apply plugin: 'idea'
+
+apply from: 'jmh.gradle'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
